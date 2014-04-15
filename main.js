@@ -24,3 +24,9 @@ console.log(square(3));
 console.log(square(5));
 
 // Exercise #4 
+
+var negate = function(num) {
+    return num * -1;
+}
+console.log(5);
+console.log(-8);
