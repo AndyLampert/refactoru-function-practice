@@ -32,3 +32,17 @@ describe("negate", function() {
 });
 
 // Exercise #5
+describe("Makes array", function() {
+  it("takes three arguments and returns an array with each of those args as items", function() {
+    expect(toArray(1,4,5)).toEqual([1,4,5]);
+    expect(toArray(8,9,10)).toEqual([8,9,10]);
+  });
+});
+
+// Exercise #6
+
+// Exercise #7
+// Exercise #8
+// Exercise #9
+// Exercise #10
+

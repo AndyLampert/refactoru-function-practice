@@ -24,9 +24,19 @@ console.log(square(3));
 console.log(square(5));
 
 // Exercise #4 
-
 var negate = function(num) {
     return num * -1;
 }
-console.log(5);
-console.log(-8);
+
+// Exercise #5
+var toArray = function(a,b,c) {
+    return [a,b,c];
+}
+// console.log(toArray(1,4,5));
+
+// Exercise #6
+
+// Exercise #7
+// Exercise #8
+// Exercise #9
+// Exercise #10
