@@ -51,25 +51,25 @@ describe("startsWithA", function() {
 // Exercise #7
 describe("excite", function() {
   it("takes a single string argument and returns the given string plus three exclamation marks.", function() {
-    expect(excite()).toEqual('yes!!!');
-    expect(excite()).toEqual('no!!!');
+    expect(excite('yes')).toEqual('yes!!!');
+    expect(excite('no')).toEqual('no!!!');
   });
 });
 // Exercise #8
 describe("sun", function() {
   it("takes a single string argument and returns true if the string contains the word 'sun' within it.", function(){
-    expect('sundries').toEqual(true);
-    expect('asunder').toEqual(true);
-    expect('catapult').toEqual(false);
+    expect(sun('sundries')).toEqual(true);
+    expect(sun('asunder')).toEqual(true);
+    expect(sun('catapult')).toEqual(false);
   });
 });
 
 // Exercise #9
 describe("tiny", function() {
   it("takes a single number argument and returns true if the number is between 0 and 1.", function() {
-    expect(0.3).toEqual(true);
-    expect(14).toEqual(false);
-    expect(-5).toEqual(false);
+    expect(tiny(0.3)).toEqual(true);
+    expect(tiny(14)).toEqual(false);
+    expect(tiny(-5)).toEqual(false);
   });
 });
 

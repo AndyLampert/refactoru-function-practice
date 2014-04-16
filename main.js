@@ -55,7 +55,34 @@ var excite = function(str){
 }
 
 // Exercise #8
+var sun = function(str) {
+    if(str.indexOf('sun') >= 0) 
+        return true;
+    else 
+        return false;
+    }
 
+console.log(sun('sunasdf'));
+console.log(sun('asunder'));
+console.log(sun('catapult'));
 // Exercise #9
+var tiny = function(numBetween0and1) {
+    if(numBetween0and1 > 0 && numBetween0and1 < 1) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+console.log(tiny(1.2));
+console.log(tiny(0.2));
+
 
 // Exercise #10
+
+
+
+
+
+
+
