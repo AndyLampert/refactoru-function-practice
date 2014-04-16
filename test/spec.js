@@ -1,4 +1,5 @@
 // Exerise #1
+// Make sure tests FAIL first
 
 // can't be checked because it has no return value
 // describe("console log 3 'Five!'s", function(){
@@ -76,7 +77,7 @@ describe("tiny", function() {
 // Exercise #10
 describe("getSeconds", function() {
   it("takes a single string argument in the format 'MM:SS' (hours, minutes, and seconds) and returns the total number of seconds represented by that timespan.", function() {
-    expect('01:30').toEqual(90);
-    expect('10:25').toEqual(625);
+    expect(getSeconds('01:30')).toEqual(90);
+    expect(getSeconds('10:25')).toEqual(625);
   });
 });

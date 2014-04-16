@@ -4,7 +4,6 @@ var tripleFive = function() {
         console.log('Five!');
     }
 };
-// tripleFive();
 
 // Exercise #2
 var lastLetter = function(str) {
@@ -13,15 +12,11 @@ var lastLetter = function(str) {
     var lastChar = myString.charAt(stringLength - 1); 
     return lastChar;
 }
-// console.log(lastLetter('hello'));
-// console.log(lastLetter('island'));
 
 // Exercise #3
 var square = function(num) {
     return num * num;
 }
-// console.log(square(3));
-// console.log(square(5));
 
 // Exercise #4 
 var negate = function(num) {
@@ -32,7 +27,6 @@ var negate = function(num) {
 var toArray = function(a,b,c) {
     return [a,b,c];
 }
-// console.log(toArray(1,4,5));
 
 // Exercise #6
 var startsWithA = function(str) {
@@ -44,9 +38,6 @@ var startsWithA = function(str) {
         return false;
     }
 }
-console.log(startsWithA('aardvark'));
-console.log(startsWithA('bear'));
-console.log(startsWithA('Aardvark'));
 
 // Exercise #7
 var excite = function(str){
@@ -62,9 +53,6 @@ var sun = function(str) {
         return false;
     }
 
-console.log(sun('sunasdf'));
-console.log(sun('asunder'));
-console.log(sun('catapult'));
 // Exercise #9
 var tiny = function(numBetween0and1) {
     if(numBetween0and1 > 0 && numBetween0and1 < 1) {
@@ -74,14 +62,20 @@ var tiny = function(numBetween0and1) {
         return false;
     }
 }
-console.log(tiny(1.2));
-console.log(tiny(0.2));
-
 
 // Exercise #10
+var getSeconds = function(str) {
+    var minutes = parseInt(str.slice(0,2));
+    // var minutes = +str.substr("0, 1");
+    var seconds = parseInt(str.slice(3, 5));
+    // var seconds = +str.substr("3, 4");
+    var result = minutes * 60 + seconds;
+    return result;
+}
 
-
-
+console.log(getSeconds("01:10")) // should return 70
+console.log(getSeconds("00:40")) // should return 40
+console.log(getSeconds("04:00")) // should return 240
 
 
 
